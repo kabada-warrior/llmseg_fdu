@@ -1,3 +1,19 @@
+直接按照requiremens.txt安装依赖
+安装额外的cuda依赖
+conda install -c nvidia/label/cuda-11.7.1 cuda-runtime
+conda install -c nvidia/label/cuda-11.7.1 libcublas libcufft libcurand libcusolver libcusparse
+
+pip 
+  deepspeed用最新的
+conda:
+  conda install pytorch=2.1.0 torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+  conda install -y numpy scipy
+  pip install --force-reinstall bitsandbytes
+  conda install -c conda-forge numpy opencv 
+
+下权重
+   wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+
 [![Gradio](https://img.shields.io/badge/Gradio-Online%20Demo-blue)](http://103.170.5.190:7860/)
 [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/openxlab-app/LISA)
 
