@@ -11,6 +11,12 @@ conda:
   pip install --force-reinstall bitsandbytes
   conda install -c conda-forge numpy opencv 
 
+
+1.conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install -r requirements
+2. 中间缺什么库用pip 装什么库
+3. conda install -c conda-forge libstdcxx-ng
+
 下权重
    wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
 
